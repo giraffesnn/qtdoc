@@ -64,8 +64,8 @@ Item {
     property var currentDate: new Date()
     //property string date: currentDate.toLocaleDateString(Qt.locale("fi_FI"), "ddd d. MMM")
     //property string time: currentDate.toLocaleTimeString(Qt.locale("fi_FI"), "hh:mm")
-    property string date: currentDate.toLocaleDateString(Qt.locale("en_GB"))
-    property string time: currentDate.toLocaleTimeString(Qt.locale("en_GB"), "hh:mm")
+    property string date: currentDate.toLocaleDateString(Qt.locale("zh_CN"))
+    property string time: currentDate.toLocaleTimeString(Qt.locale("zh_CN"), "hh:mm")
 
     ClusterData {
         id: clusterDataSource
@@ -319,8 +319,8 @@ Item {
             currentDate = new Date()
             //date = currentDate.toLocaleDateString(Qt.locale("fi_FI"), "ddd d. MMM")
             //time = currentDate.toLocaleTimeString(Qt.locale("fi_FI"), "hh:mm")
-            date = currentDate.toLocaleDateString(Qt.locale("en_GB"))
-            time = currentDate.toLocaleTimeString(Qt.locale("en_GB"), "hh:mm")
+            date = currentDate.toLocaleDateString(Qt.locale("zh_CN"))
+            time = currentDate.toLocaleTimeString(Qt.locale("zh_CN"), "hh:mm")
             // Approximate total distance based on current speed
             totalDistanceSince += kph / 240. // = km / 15 min
             if (totalDistanceSince > 1.) {

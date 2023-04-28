@@ -1,3 +1,4 @@
+
 /****************************************************************************
 **
 ** Copyright (C) 2015 The Qt Company Ltd.
@@ -64,6 +65,7 @@ Item {
     property color iconGreen: "#5caa15"
     property color iconYellow: "#face20"
     property color iconDark: "#444444"
+    y: 160
 
     // TODO: Needed, as background clearing gets messed up after hybrid 3D
     Rectangle {
@@ -219,7 +221,6 @@ Item {
             color: ValueSource.seatBelt ? root.iconRed : root.iconDark
             source: "qrc:/iso-icons/iso_grs_7000_4_0249.dat"
         }
-
 
         Picture {
             width: 48

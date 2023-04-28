@@ -119,7 +119,7 @@ Item {
             anchors.bottom: parkingLight.bottom
             anchors.bottomMargin: 18
 
-            color: ValueSource.flatTire ? speedoItem.iconYellow : speedoItem.iconDark
+            color: ValueSource.flatTire ? speedoItem.iconDark : speedoItem.iconDark
             source: "qrc:/iso-icons/iso_grs_7000_4_1434A.dat"
         }
 
@@ -133,7 +133,7 @@ Item {
             anchors.top: kmText.bottom
             anchors.topMargin: 11
 
-            color: ValueSource.parkingBrake ? speedoItem.iconRed : speedoItem.iconDark
+            color: ValueSource.parkingBrake ? speedoItem.iconDark : speedoItem.iconDark
             source: "qrc:/iso-icons/iso_grs_7000_4_0238.dat"
         }
 
@@ -146,7 +146,7 @@ Item {
             anchors.bottom: parkingLight.bottom
             anchors.bottomMargin: 18
 
-            color: ValueSource.fuelLevel <= 20.0 ? speedoItem.iconRed : speedoItem.iconDark
+            color: ValueSource.fuelLevel <= 20.0 ? speedoItem.iconDark : speedoItem.iconDark
             source: "qrc:/iso-icons/iso_grs_7000_4_0245.dat"
         }
 

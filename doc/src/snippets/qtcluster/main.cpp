@@ -105,15 +105,18 @@ int main(int argc, char **argv)
     view.setHeight(480);
     view.engine()->addImportPath("qrc:/imports/");
 
-    bool sportsCar = false;
-    if (app.arguments().count() > 1)
-        sportsCar = app.arguments().at(1) == "sports";
+    //bool sportsCar = true;
+    //if (app.arguments().count() > 1)
+    //    sportsCar = app.arguments().at(1) == "hybrid";
 
-    if (sportsCar)
-        view.setSource(QUrl("qrc:/qml/dash_sports/DashboardFrame.qml"));
-    else
+    //if (sportsCar)
+        //view.setSource(QUrl("qrc:/qml/dash_sports/DashboardFrame.qml"));
+    //else
         view.setSource(QUrl("qrc:/qml/dash_hybrid/DashboardFrame.qml"));
 
-    view.show();
+    //view.hide();
+    //QTimer::singleShot(1000,&view,SLOT(showFullScreen()));
+    view.showFullScreen();
+
     return app.exec();
 }

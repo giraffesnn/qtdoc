@@ -57,6 +57,7 @@ Item {
     property alias gadget: gadget
 
     property real gaugeOpacity: 1
+    y: 80
 
     Image {
         id: image

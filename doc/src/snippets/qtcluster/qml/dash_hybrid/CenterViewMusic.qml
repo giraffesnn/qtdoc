@@ -35,8 +35,8 @@ Item {
     id: musicContainer
 
     property url currentCover: "image://etc/cover.png"
-    property string currentSong: "Doesn't Mean Anything"
-    property string currentArtist: "Alicia Keys"
+    property string currentSong: "追梦赤子心"
+    //property string currentArtist: "Alicia Keys"
     opacity: 0.5
     property alias yTarget: startupAnimation.to
     property int defaultYPos: 400
@@ -105,4 +105,3 @@ Item {
         }
     }
 }
-

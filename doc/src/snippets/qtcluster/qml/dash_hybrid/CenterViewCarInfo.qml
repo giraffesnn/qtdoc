@@ -53,16 +53,16 @@ Item {
         anchors.horizontalCenter: image.horizontalCenter
 
         CarInfoField {
-            title: "Total distance"
+            title: "总里程"
             value: carinfoContainer.total.toString()
             unit: "km"
         }
 
-        CarInfoField {
-            title: "Since last\ncharge"
-            value: carinfoContainer.sinceLast.toString()
-            unit: "km"
-        }
+        //CarInfoField {
+        //    title: "Since last\ncharge"
+        //    value: carinfoContainer.sinceLast.toString()
+        //    unit: "km"
+        //}
     }
 
     Timer {
@@ -94,4 +94,3 @@ Item {
         }
     }
 }
-

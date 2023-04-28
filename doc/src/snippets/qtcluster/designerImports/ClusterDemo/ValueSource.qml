@@ -62,8 +62,8 @@ Item {
     property var currentDate: new Date()
     //property string date: currentDate.toLocaleDateString(Qt.locale("fi_FI"), "ddd d. MMM")
     //property string time: currentDate.toLocaleTimeString(Qt.locale("fi_FI"), "hh:mm")
-    property string date: currentDate.toLocaleDateString(Qt.locale("en_GB"))
-    property string time: currentDate.toLocaleTimeString(Qt.locale("en_GB"), "hh:mm")
+    property string date: currentDate.toLocaleDateString(Qt.locale("zh_CN"))
+    property string time: currentDate.toLocaleTimeString(Qt.locale("zh_CN"), "hh:mm")
 
     property real latitude: 0
     property real longitude: 0

@@ -49,7 +49,7 @@ Item {
         anchors.top: contactImage.bottom
         anchors.topMargin: 10
         anchors.horizontalCenter: contactImage.horizontalCenter
-        text: contactContainer.name === "" ? "Browsing\ncontacts" : "Calling"
+        text: contactContainer.name === "" ? "通讯录" : "正在拨号..."
         color: "gray"
         font.pixelSize: 20
     }
@@ -102,8 +102,8 @@ Item {
         interval: 2000
         running: false
         onTriggered: {
-            name = "Jane"
-            icon = "image://etc/jane.png"
+            name = "中国移动通信"
+            icon = "image://etc/logo.jpg"
         }
     }
 
@@ -116,4 +116,3 @@ Item {
         }
     }
 }
-

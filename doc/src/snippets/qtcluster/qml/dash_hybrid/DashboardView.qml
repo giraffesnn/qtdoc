@@ -40,7 +40,7 @@ Loader {
     id: centerview
     asynchronous: true
     anchors.fill: parent
-    source: "CenterView.qml"
+    //source: "CenterView.qml"
 
     Loader {
         id: dash

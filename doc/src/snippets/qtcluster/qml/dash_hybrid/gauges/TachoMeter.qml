@@ -106,8 +106,8 @@ Item {
         anchors.top: tachometerNeedle.top
         anchors.topMargin: -7
         anchors.horizontalCenter: tachometerNeedle.horizontalCenter
-        text: tachometer.actualRPM > 4000 ? "POWER" : "ECO"
-        font.pixelSize: 18
+        text: tachometer.actualRPM > 4000 ? "运动" : "节能"
+        font.pixelSize: 20
         color: tachometer.actualRPM <= 4000 ? "white" : "red"
     }
 }

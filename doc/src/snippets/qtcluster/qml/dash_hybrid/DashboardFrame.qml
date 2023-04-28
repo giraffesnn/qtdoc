@@ -43,6 +43,8 @@ import ClusterDemo 1.0
 
 Rectangle
 {
+    x: 0
+    y: 160
     width: 1280
     height: 480
     gradient: Gradient {
@@ -55,7 +57,7 @@ Rectangle
         id: logo
         anchors.horizontalCenter: parent.horizontalCenter
         y: 270
-        source: "image://etc/Built_with_Qt.png"
+        source: "image://etc/chushi.png"
     }
 
     Loader {
@@ -78,8 +80,8 @@ Rectangle
         id: flipin
         PauseAnimation { duration: 500 }
         SmoothedAnimation { target: rot; property: "angle"; from: 90; to: 0; duration: 500 }
-        PauseAnimation { duration: 2500 }
-        OpacityAnimator { target: logo; from: 1.0; to: 0; duration: 500 }
+        //PauseAnimation { duration: 2500 }
+        //OpacityAnimator { target: logo; from: 1.0; to: 0; duration: 500 }
     }
 
     function stopAll() {

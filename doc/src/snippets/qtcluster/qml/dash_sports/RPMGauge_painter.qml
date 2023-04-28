@@ -92,7 +92,8 @@ Item {
             anchors.topMargin: Functions.toPixels(0.12, parent.outerRadius)
             font.pixelSize: Functions.toPixels(0.3, parent.outerRadius)
             color: "white"
-            text: ValueSource.gearString
+            //text: ValueSource.gearString
+            text: (rpmGauge.value/1000).toFixed()
         }
 
         Picture {
@@ -106,7 +107,7 @@ Item {
             anchors.left: parent.horizontalCenter
 
             source: "qrc:/iso-icons/iso_grs_7000_4_0247.dat"
-            color: ValueSource.batteryLevel > 15 ? rpmItem.iconDark : rpmItem.iconRed
+            color: ValueSource.batteryLevel > 15 ? rpmItem.iconDark : rpmItem.iconDark
             z: 3
         }
 

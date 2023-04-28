@@ -34,7 +34,7 @@ import QtQuick 2.6
 Item {
     id: calendarContainer
 
-    property string appointment: "No appointments"
+    property string appointment: "没有日程"
     property var currentDate
     property string date
     property string time
@@ -99,11 +99,10 @@ Item {
     onVisibleChanged: {
         if (visible) {
             currentDate = new Date()
-            date = currentDate.toLocaleDateString(Qt.locale("en_GB"))
-            time = currentDate.toLocaleTimeString(Qt.locale("en_GB"), "hh:mm")
+            date = currentDate.toLocaleDateString(Qt.locale("zh_CN"))
+            time = currentDate.toLocaleTimeString(Qt.locale("zh_CN"), "hh:mm")
             x = defaultXPos
             startupAnimation.start()
         }
     }
 }
-

@@ -108,32 +108,32 @@ Item {
         anchors.horizontalCenter: speedometerNeedle.horizontalCenter
         spacing: 7
 
-        Text {
-            font.pixelSize: 18
-            color:(ValueSource.gear === 0 && ValueSource.parkingBrake) ? "white" : "gray"
-            text: "P"
-        }
+        //Text {
+        //    font.pixelSize: 18
+        //    color:(ValueSource.gear === 0 && ValueSource.parkingBrake) ? "white" : "gray"
+        //    text: "P"
+        //}
 
-        Text {
-            font.pixelSize: 18
-            //font.bold: ValueSource.gear === -1
-            color: ValueSource.gear === -1 ? "white" : "gray"
-            text: "R"
-        }
+        //Text {
+        //    font.pixelSize: 18
+        //    //font.bold: ValueSource.gear === -1
+        //    color: ValueSource.gear === -1 ? "white" : "gray"
+        //    text: "R"
+        //}
 
-        Text {
-            font.pixelSize: 18
-            //font.bold: ValueSource.gear === 0
-            color: (ValueSource.gear === 0 && !ValueSource.parkingBrake) ? "white" : "gray"
-            text: "N"
-        }
+        //Text {
+        //    font.pixelSize: 18
+        //    //font.bold: ValueSource.gear === 0
+        //    color: (ValueSource.gear === 0 && !ValueSource.parkingBrake) ? "white" : "gray"
+        //    text: "N"
+        //}
 
-        Text {
-            font.pixelSize: 18
-            //font.bold: ValueSource.gear === 1
-            color: ValueSource.gear === 1 ? "white" : "gray"
-            text: "D"
-        }
+        //Text {
+        //    font.pixelSize: 18
+        //    //font.bold: ValueSource.gear === 1
+        //    color: ValueSource.gear === 1 ? "white" : "gray"
+        //    text: "D"
+        //}
     }
 
     Text {

@@ -54,13 +54,13 @@ Item {
         anchors.top: parent.top
         anchors.topMargin: (ValueSource.carId === 0) ? 160 : 70
         anchors.horizontalCenter: parent.horizontalCenter
-        source: "image://etc/MusicPlayer_Cover.png"
+        //source: "image://etc/MusicPlayer_Cover.png"
     }
 
     Image {
         id: remainingTimeImage
         anchors.centerIn: musicCover
-        source: "image://etc/MusicPlayer_CircleRemaining.png"
+        //source: "image://etc/MusicPlayer_CircleRemaining.png"
     }
 
     Text {
@@ -68,14 +68,14 @@ Item {
         anchors.top: remainingTimeImage.bottom
         anchors.topMargin: 10
         anchors.horizontalCenter: remainingTimeImage.horizontalCenter
-        text: "Tonight's the Night \n(Gonna Be Alright)"
+        //text: "国科础石"
         font.pixelSize: 12
         color: "white"
     }
     Text {
         anchors.top: song.bottom
         anchors.horizontalCenter: song.horizontalCenter
-        text: "ROD STEWART"
+        //text: ""
         font.pixelSize: 10
         color: "white"
     }
@@ -113,4 +113,3 @@ Item {
             ValueSource.musicTimer.running = true
     }
 }
-

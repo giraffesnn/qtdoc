@@ -145,7 +145,8 @@ Item {
         anchors.bottom: parent.verticalCenter
         font.pixelSize: Functions.toPixels(0.3, rpmGauge.outerRadius)
         color: "white"
-        text: ValueSource.gearString
+        //text: ValueSource.gearString
+        text: (rpmGauge.value/1000).toFixed(1)
     }
 
     Image {
